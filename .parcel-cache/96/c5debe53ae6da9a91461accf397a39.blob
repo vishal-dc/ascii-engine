@@ -1,0 +1,13 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+var _Vector = require("./Vector");
+var _VectorDefault = _parcelHelpers.interopDefault(_Vector);
+class Layer {
+  constructor(options) {
+    this.opacity = options.opacity || 1;
+    this.isVisible = options.isVisible || true;
+    this.pos = options.pos || _VectorDefault.default.zero();
+    this.size = options.size;
+  }
+}
+exports.default = Layer;

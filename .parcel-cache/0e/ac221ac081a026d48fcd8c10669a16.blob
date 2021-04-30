@@ -1,0 +1,29 @@
+var _Layer = require("./Layer");
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+var _LayerDefault = _parcelHelpers.interopDefault(_Layer);
+var _Vector = require("./Vector");
+var _VectorDefault = _parcelHelpers.interopDefault(_Vector);
+var _Tile = require("./Tile");
+var _TileDefault = _parcelHelpers.interopDefault(_Tile);
+var _Color = require("./Color");
+var _ColorDefault = _parcelHelpers.interopDefault(_Color);
+console.log("hello world");
+// render
+// input
+// tiles
+const layers = {
+  background: new _LayerDefault.default({
+    size: new _VectorDefault.default(80, 24)
+  }),
+  actor: new _LayerDefault.default({
+    size: new _VectorDefault.default(80, 24)
+  })
+};
+const player = new _TileDefault.default({
+  background: new _ColorDefault.default(0, 0, 0, 0),
+  char: '@',
+  color: new _ColorDefault.default(255),
+  isVisible: true,
+  pos: _VectorDefault.default.zero()
+});
+const backgroundTiles = Array.from();
